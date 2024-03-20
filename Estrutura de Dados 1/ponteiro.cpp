@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void EX01(){
+void L01_EX01(){
     
     int v[4] = {1, 2, 3, 4};
     int* p = v;
@@ -25,7 +25,7 @@ void EX01(){
     printf("%p\n", p[3]);
 }
 
-void EX02(){
+void L01_EX02(){
 
     int a = 10;
     int b = 20;
@@ -55,7 +55,7 @@ void EX02(){
     printf("%d\n", **v+3);
 }
 
-void EX03(){
+void L01_EX03(){
 
     int v1[3] = {1, 2, 3};
     int v2[3] = {4, 5, 6};
@@ -92,9 +92,43 @@ void EX03(){
     printf("%d\n", *(*(pm+1)+2));
 }
 
+void L02_EX01(){
+    typedef struct produto{
+        int codigo;
+        char descricao[12];
+        float preco;
+    } Produto;
+
+    Produto prod = {10, "Teclado", 98.5};
+    Produto* p = &prod;
+    Produto* pi = &prod;
+    Produto* pc = &prod+1;
+    Produto* pf = &prod+2;
+
+    printf("%p\n", p);
+    printf("%p\n", pi);
+    printf("%p\n", pc);
+    printf("%p\n", pf);
+    printf("\n");
+    printf("%p\n", &p);
+    printf("%p\n", &prod);
+    printf("%d\n", prod.codigo);
+    printf("%d\n", p->codigo);
+    printf("%d\n", (*p).codigo);
+    printf("%p\n", &(p->codigo));
+    printf("%p\n", prod.descricao);
+    printf("%p\n", p->descricao);
+    printf("%p\n", &(p->descricao));
+    printf("%p\n", &(prod.descricao));
+    printf("%f\n", prod.preco);
+    printf("%f\n", p->preco);
+    printf("%p\n", &(p->preco));
+    printf("%p\n", &(prod.preco));
+}
+
 int main(){
     
-    EX03();
+    L02_EX01();
 
     return 0;
 }
