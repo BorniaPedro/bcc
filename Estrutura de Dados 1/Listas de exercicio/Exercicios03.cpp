@@ -55,23 +55,21 @@ bool checkName(string s){
 }
 
 int* createArray(int n, bool ord){
-    int* v;
-    v - (int*)calloc(n, sizeof(int));
+    int* v = new int[n];
     int cont;
     if (ord == true){
         cont = 1;
-        for (int i = 0; i<= n; i++){
+        for (int i = 0; i < n; i++){
             v[i] = cont;
             cont += 1;
         }
     } else {
         cont = n;
-        for (int i = 0; i <= n; i++){
+        for (int i = 0; i < n; i++){
             v[i] = cont;
             cont -= 1;
         }
     }
-    free(v);
     return v;
 }
 
