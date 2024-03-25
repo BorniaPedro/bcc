@@ -121,8 +121,7 @@ int* arrayMerge(int* v1, int n1, int*v2, int n2){
 }
 
 int main(){
-    // int e01 = stringFindFirst("o rato roeu a roupa do rei de roma", 'r');
-    // printf("%d", e01);
+    // cout << stringFindFirst("o rato roeu a roupa do rei de roma", 'r') << endl;
 
     // bool e02 = isLetter('v');
     // printf("%u", e02);
@@ -136,17 +135,17 @@ int main(){
     // int v2[3] = {6,2,3};
     // arrayConcat(v1, 4, v2, 3);
 
-    int v1[4] = {1,4,6,8};
-    int v2[3] = {2,3,4};
-    int n1 = 4;
-    int n2 = 3;
+    // int v1[4] = {1,4,6,8};
+    // int v2[3] = {2,3,4};
+    // int n1 = 4;
+    // int n2 = 3;
 
-    int* result = arrayMerge(v1, n1, v2, n2);
-    int n3 = n1 + n2;
+    // int* result = arrayMerge(v1, n1, v2, n2);
+    // int n3 = n1 + n2;
 
-    for(int i = 0; i < n3; i++){
-        printf("%d ", result[i]);
-    }
+    // for(int i = 0; i < n3; i++){
+    //     printf("%d ", result[i]);
+    // }
 
     return 0;
 }
