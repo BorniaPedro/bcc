@@ -18,12 +18,7 @@ int main(){
    t1->cancelaMatricula("a002");
    t1->imprime();
 
-	  delete t1;
-     delete t2;  
-	  delete a1;
-   
-
-   // t1.cancelaMatricula("15");
-   // t1.imprime();
-
+	delete t1;
+   delete t2;  
+	delete a1;
 }
