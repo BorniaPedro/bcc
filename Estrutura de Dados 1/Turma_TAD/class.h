@@ -43,29 +43,44 @@ class Turma {
      int qntde;
 
     public:
-     Turma(string semestre, int tamVetor){
+     Turma(string _semestre, int _tamVetor){
         this->codigoDisciplina = "";
         this->codigoTurma = "";
-        this->semestre = semestre;
-        this->alunos = new Aluno*[tamVetor];
-        this->tamVetor = tamVetor;
-        this->qntde = "0";
+        this->semestre = _semestre;
+        this->alunos = new Aluno*[_tamVetor];
+        this->tamVetor = _tamVetor;
+        this->qntde = 0;
      }
 
      ~Turma(){
         cout << "Destruindo" << endl;
      }
 
-
      bool matricula(Aluno* a){
+        if(qntde >= tamVetor){return false;}
 
+        alunos[qntde] = a;
+        qntde++;
+        return true;
      }
 
      int cancelaMatricula(string ra){
-
+        for (int i = 0; i < qntde; i++) {
+            if (alunos[i]->getRa() == ra) {
+                for (int j = i; j < qntde - 1; j++) {
+                    alunos[j] = alunos[j + 1];
+                }
+                qntde--;
+                return 1;
+            }
+        }
+        return 0;
      }
 
      void imprime(){
+        for (int i = 0; i < qntde; i++) {
+            alunos[i]->imprimir();
+        }
+      }   
 
-     }  
-}
+};
