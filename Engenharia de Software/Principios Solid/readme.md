@@ -1,0 +1,1 @@
+Nesta pasta apresento 4 princípios dentre SOLID + Prefira Composição a Herança + Princípio de Demeter, mostrando um exemplo de um código ferindo o principío e uma versão corrigida desse código, mostrando alterações
