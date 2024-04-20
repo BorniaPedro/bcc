@@ -1,2 +1,2 @@
 # bcc
-Repositório de todas as minhas matérias do curso de Ciência da Computação
+Repositório das minhas matérias do curso de Ciência da Computação
