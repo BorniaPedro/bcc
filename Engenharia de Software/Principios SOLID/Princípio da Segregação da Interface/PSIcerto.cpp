@@ -7,12 +7,12 @@ class Automovel{
      void ligarMotor(); // todos os automóveis possuem motor 
 }
 
-class Carro extends Automovel{
+class Carro : public Automovel{
     public:
      void abrirPorta();
 };
 
-class Moto extends Automovel{
+class Moto : public Automovel{
     public:
      void empinar();
 };
