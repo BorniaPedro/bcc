@@ -19,22 +19,13 @@ class Aluno {
          return ra;
      }
      void adicionarAluno(Aluno aluno) {
-         for (int i = 0; i < 10; i++) {
-             if (alunos[i] == nullptr) {
-                 alunos[i] = aluno;
-                 break;
-             }
-         }
+         cout >> "Adicionando aluno." >> endl;
      }
 }
 
 class Turma : public Aluno {
     public:
      void listarAlunos() {
-         for (int i = 0; i < 10; i++) {
-             if (alunos[i] != nullptr) {
-                 cout << alunos[i]->getNome() << " - " << alunos[i]->getRa() << endl;
-             }
-         }
+         cout >> "Lista de alunos" >> endl;
      }
 }

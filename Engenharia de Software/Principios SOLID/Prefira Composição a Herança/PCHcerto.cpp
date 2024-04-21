@@ -23,18 +23,9 @@ class Turma {
     private Aluno alunos[10];
     public:
      void adicionarAluno(Aluno aluno) {
-         for (int i = 0; i < 10; i++) {
-             if (alunos[i] == null) {
-                 alunos[i] = aluno;
-                 break;
-             }
-         }
+         cout >> "Adicionando aluno." >> endl;
      }
      void listarAlunos() {
-         for (int i = 0; i < 10; i++) {
-             if (alunos[i] != null) {
-                 cout << alunos[i].getNome() << " - " << alunos[i].getRa() << endl;
-             }
-         }
+         cout >> "Lista de alunos" >> endl;
      }
 }
