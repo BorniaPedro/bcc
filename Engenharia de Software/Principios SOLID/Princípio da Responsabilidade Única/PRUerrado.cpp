@@ -10,7 +10,7 @@ class Turma{
          taxaAprovacao = (aprovados / totalAlunos) * 100;  
          cout << "Taxa de Aprovacao: " << taxaAprovacao << "%" << endl;
      }
-}
+};
 
 int main(){
     Turma t1;

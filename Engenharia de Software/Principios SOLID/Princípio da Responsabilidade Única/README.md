@@ -1,5 +1,7 @@
-![alt text](image.png)
+### Princípio da Responsabilidade Única - Single Responsability principle
 
-![alt text](image-1.png)
+O princípio da Responsabilidade Única diz respeito a evitar o uso de funções que possuem mais de uma função.
 
-![Imagem do WhatsApp de 2024-04-19 à(s) 23 18 04_76c35589](https://github.com/BorniaPedro/bcc/assets/95353562/9ea72a3b-8bdf-4a8c-afed-173f97c72942)
+No código 'PRUerrado' o princípio é ferido quando a minha função 'calculaAprovacao' faz a função de calcular a taxa de aprovação e tambem a função de imprimir essa taxa de aprovação.
+
+Já em 'PRUcerto', eu separo a função do outro código em duas, assim cada função agora tem apenas uma responsabilidade. No caso do exemplo eu também criei uma classe apenas para a interação do console com o usuário, mas isso vai depender de cada código.

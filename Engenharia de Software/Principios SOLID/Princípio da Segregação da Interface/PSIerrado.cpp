@@ -9,7 +9,7 @@ class Automovel{
      void abrirPorta(); // apenas carros possuem portas
 
      void empinar(); // apenas motos empinam
-}
+};
 
 int main(){
     Automovel carro1;

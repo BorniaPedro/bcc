@@ -5,16 +5,16 @@ using namespace std;
 class Automovel{
     public:
      void ligarMotor(); // todos os automóveis possuem motor 
-}
-
-class Carro : public Automovel{
-    public:
-     void abrirPorta();
 };
 
 class Moto : public Automovel{
     public:
      void empinar();
+};
+
+class Carro : public Automovel{
+    public:
+     void abrirPorta();
 };
 
 int main(){
