@@ -4,19 +4,19 @@ using namespace std;
 
 class Animal{
     public:
-     void makeSound() const = 0;
+     void makeSound();
 };
 
 class Cachorro : public Animal{
     public:
-     void makeSound() const override{
+     void makeSound(){
          cout << "Au-Au" << endl;
      }
 };
 
 class Gato : public Animal{
     public:
-     void makeSound() const override{
+     void makeSound(){
          cout << "Miau" << endl;
      }
 };
