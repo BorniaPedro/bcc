@@ -146,3 +146,19 @@ void maxHeapify(int* v, int i, int th) {
         maxHeapify(v, maior, th);
     }
 }
+
+void buildMaxHeap(int* v, int n) {
+    int i;
+    for (i=n/2; i >= 0; i--) {
+        maxHeapify(v, i, n);
+    }
+}
+
+void heapSort(int* v, int n) {
+    int i;
+    buildMaxHeap(v, n);
+    for (i = n-1; i > 0; i--) {
+        troca(v, 0, i);
+        maxHeapify(v, 0, i);
+    }
+}
